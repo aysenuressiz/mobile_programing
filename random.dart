@@ -1,6 +1,6 @@
 import 'dart:math';
 
-int? createRandom() {
+int? generateRandom() {
   Random random = new Random();
   int randomNumber = random.nextInt(100);
   print("Random sayı: $randomNumber");
@@ -15,6 +15,6 @@ int? createRandom() {
 }
 
 void main() {
-  int? durum = createRandom() ?? 0;
+  int? durum = generateRandom() ?? 0;
   print('Durum: $durum');
 }
